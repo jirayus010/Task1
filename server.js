@@ -31,6 +31,7 @@ app.get('/', function (req, res) {
         });
 
         app.get('/api/employees',db.getEmployees);
+        app.get('/api/employees/:id',db.getEmployeesByID);
 
 
     var port = process.env.PORT || 8080;

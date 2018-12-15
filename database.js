@@ -15,9 +15,29 @@ function getEmployees(req, res) {
             console.log('ERROR:', error)
         })
 }
+function getEmployeesByID(req, res) {
+    db.any('select * from employees where employee_ID =' + req.params.id)
+    .then(function (data) {
+    res.status(200)
+    .json({
+    status: 'success',
+    data: data,
+    message: 'Retrieved employees id:' +
+    req.params.id
+    });
+    })
+    .catch(function (error) {
+        res.status(500).json({
+            status: 'failed',
+            message: 'Failed to retriave Employees ID:'+req.params.id
+            });
+    
+    })
+    }
 
                 
 module.exports = {
     getEmployees,
+    getEmployeesByID
 
 }
