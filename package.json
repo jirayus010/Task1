@@ -1,10 +1,10 @@
 {
   "name": "express-rest",
   "version": "1.0.0",
-  "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
   },
   "keywords": [],
   "author": "",
@@ -14,5 +14,15 @@
     "cors": "^2.8.5",
     "express": "^4.16.4",
     "pg-promise": "^8.5.1"
-  }
+  },
+  "devDependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jirayus010/Task1.git"
+  },
+  "bugs": {
+    "url": "https://github.com/jirayus010/Task1/issues"
+  },
+  "homepage": "https://github.com/jirayus010/Task1#readme",
+  "description": ""
 }
