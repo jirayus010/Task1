@@ -11,21 +11,11 @@ app.use(bodyParser.urlencoded({
 extended: true
 }));
 // index page
-app.get('/', function (req, res) {
-    res.send('Express is running');
-    });
- 
+
 
     //add routing
     // index page
-app.get('/', function (req, res) {
-    res.send('Express is running');
-    });
 
-    var output = {
-        status:'succes',
-        message:'rest api is working'
-    }
     app.get('/api/json', function (req, res) {
         res.status(200).json(output);
         });
